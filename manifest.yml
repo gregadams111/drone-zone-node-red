@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: drone-zone
+  host: drone-zone
+  disk_quota: 1024M
+  services:
+  - drone-zone-cloudantNoSQLDB
+  - IBM Watson Machine Learning-t4
+  - visual-recognition-service
